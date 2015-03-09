@@ -1,3 +1,5 @@
+/** @jsx React.DOM */
+
 var MyState = React.createClass({
   getInitialState: function() {
     return {

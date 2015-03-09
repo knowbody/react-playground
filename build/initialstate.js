@@ -1,3 +1,5 @@
+/** @jsx React.DOM */
+
 var MyState = React.createClass({displayName: 'MyState',
   getInitialState: function() {
     return {
