@@ -8,4 +8,4 @@ var Intro = React.createClass({displayName: 'Intro',
   }
 });
 
-React.render(React.createElement(Intro, null), document.getElementById('app'));
+React.render(React.createElement(Intro, null), document.getElementById('intro'));
