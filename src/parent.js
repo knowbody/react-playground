@@ -9,6 +9,7 @@ var Parent = React.createClass({
   render: function() {
     return (
       <div>
+        <h1>3. Parent:</h1>
         <p>Hello, {this.state.name}</p>
         <Child />
       </div>

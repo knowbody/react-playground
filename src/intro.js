@@ -3,7 +3,10 @@
 var Intro = React.createClass({
   render: function() {
     return (
-      <h1>React intro</h1>
+      <div>
+        <h1>1. Intro:</h1>
+        <p>Hello React</p>
+      </div>
     );
   }
 });

@@ -10,6 +10,7 @@ var Parent = React.createClass({
   render: function() {
     return (
       <div>
+        <h1>4. Props:</h1>
         <p>Hello, {this.state.name}</p>
         <Child age={this.state.age} />
       </div>
@@ -26,4 +27,4 @@ var Child = React.createClass({
 });
 
 
-React.render(<Parent />, document.getElementById('childState'));
+React.render(<Parent />, document.getElementById('props'));

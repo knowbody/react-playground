@@ -20,6 +20,7 @@ var List = React.createClass({displayName: 'List',
   render: function() {
     return (
       React.createElement("div", null, 
+        React.createElement("h1", null, "5. Todo:"), 
         React.createElement("h3", null, "To do list:"), 
         React.createElement(AddItem, {add: this.addItem}), 
         React.createElement(ShowList, {itemsList: this.state.items, del: this.removeItem})

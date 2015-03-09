@@ -3,15 +3,16 @@
 var Parent = React.createClass({displayName: 'Parent',
   getInitialState: function() {
     return {
-      name: "I'm a parent"
+      name: "I'm a parent",
+      age: 13
     }
   },
   render: function() {
     return (
       React.createElement("div", null, 
-        React.createElement("h1", null, "3. Parent:"), 
+        React.createElement("h1", null, "4. Props:"), 
         React.createElement("p", null, "Hello, ", this.state.name), 
-        React.createElement(Child, null)
+        React.createElement(Child, {age: this.state.age})
       )
     );
   }
@@ -20,10 +21,10 @@ var Parent = React.createClass({displayName: 'Parent',
 var Child = React.createClass({displayName: 'Child',
   render: function() {
     return (
-      React.createElement("p", null, "and this is a child")
+      React.createElement("p", null, "and this is a child which is ", this.props.age, " years old.")
     );
   }
 });
 
 
-React.render(React.createElement(Parent, null), document.getElementById('parent'));
+React.render(React.createElement(Parent, null), document.getElementById('props'));
