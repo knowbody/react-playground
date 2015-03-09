@@ -8,7 +8,7 @@ var Parent = React.createClass({
     }
   },
   render: function() {
-    return(
+    return (
       <div>
         <p>Hello, {this.state.name}</p>
         <Child age={this.state.age} />
